@@ -1,0 +1,12 @@
+<text>你想要借多少钱</text>
+<input value="{{urldata.money}}" bindinput='inputedit' type='number' placeholder="这是一个可以自动聚焦的input" ></input>
+{{urldata.money}}
+<text>需要利息吗</text>
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox">
+    <checkbox value="{{checkbox.value}}"/>
+    {{checkbox.name}} {{urldata.need}}
+  </label>
+</checkbox-group>
+<input></input>
+<button bindtap='gosharePage'>go</button>

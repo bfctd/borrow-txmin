@@ -1,0 +1,8 @@
+<view>我需要{{urldata.money}}这么多钱{{aaa}}</view> 
+<text>我选择了{{urldata.need}}</text>
+
+<text>生成了二维码图片，可以保存转发到朋友圈</text>
+<image></image>
+
+<button open-type="share">转发</button>
+<button>保存图片</button>

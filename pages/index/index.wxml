@@ -1,0 +1,22 @@
+<text>白条花呗还完又没钱了。。。</text>
+<text>某蚁借呗利息望而却步。。。</text>
+<text>穷到没朋友、没对象、没基友。。。</text>
+<text>又没钱儿了。。。</text>
+<text>爸妈，我快要穷死了。狐朋狗友一大堆，为何要找父母。</text>
+<text>见证朋友的时候到了：怎么见证？借我点钱呗。</text>
+<text>不借钱的朋友，你良心不会痛吗。</text>
+<text>这样的朋友留着干嘛？</text>
+<text>有一天你真的穷困潦倒了，再找朋友借钱？</text>
+<text>朋友？呵呵哒，他根本没拿你当朋友</text>
+<text>何不此刻就检验一下他！</text>
+<navigator open-type="navigateTo" url='../one/one'>
+  <button bindtap="clickMe">即可检验，now，起飞</button>
+</navigator>
+
+
+
+<navigator open-type="navigateTo" url='../one/one'>one</navigator>
+<navigator open-type="navigateTo" url='../two/two'>two</navigator> <!-- redirectTo这样是没有返回按钮的 -->
+<navigator open-type="navigateTo" url='../invite_index/invite_index'>invite_index</navigator>
+<!-- <map class='bjmap' bindmarkertap="markertap"></map> -->
+<!-- <map longitude="广州经度" latitude="广州纬度"></map> -->

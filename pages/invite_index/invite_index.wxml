@@ -1,0 +1,20 @@
+<text>我是他的真朋友，别人都不行</text>
+<text>我来祝他一臂之力</text>
+<text>这么多年的真朋友该现身了</text>
+<view>你的好友需要众筹
+  <text>{{getshareurldata.money}}元
+</text></view>
+我要给他多少钱
+<input placeholder='我是他的真朋友，给他钱，还他心愿'></input>
+<button>支付</button>
+<view>
+   谁谁谁支持他20元
+</view><view>
+   谁谁谁支持他30元
+</view><view>
+   谁谁谁支持他2000元
+</view><view>
+   谁谁谁支持他10元
+</view><view>
+   谁谁谁支持他1000元
+</view>

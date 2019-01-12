@@ -1,0 +1,17 @@
+{
+  "appjsoninfo":"// 是当前小程序的全局配置",
+    "pages":["pages/index/index","pages/invite_index/invite_index","pages/one/one","pages/two/two"],
+    "pagesinfo":"// 用于描述当前小程序所有页面路径",
+    "window":{
+      "navigationBarTitleText": "真假朋友最终鉴定方案",
+      "backgroundTextStyle": "light",
+      "backgroundTextStyleinfo": "// ligh / tdark下拉login样式"
+    },
+    "windowinfo": "// 定义小程序所有页面公共样式",
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
+    },
+    "permissioninfo":" // 小程序接口权限相关设置"
+}
