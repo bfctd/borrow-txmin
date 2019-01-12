@@ -9,14 +9,13 @@
 <text>有一天你真的穷困潦倒了，再找朋友借钱？</text>
 <text>朋友？呵呵哒，他根本没拿你当朋友</text>
 <text>何不此刻就检验一下他！</text>
-<navigator open-type="navigateTo" url='../one/one'>
-  <button bindtap="clickMe">即可检验，now，起飞</button>
-</navigator>
+<button open-type="getUserInfo" bindtap="clickMe">即可检验，now，起飞</button>
 
 
 
 <navigator open-type="navigateTo" url='../one/one'>one</navigator>
-<navigator open-type="navigateTo" url='../two/two'>two</navigator> <!-- redirectTo这样是没有返回按钮的 -->
+<navigator open-type="navigateTo" url='../two/two'>two</navigator>
+<!-- redirectTo这样是没有返回按钮的 -->
 <navigator open-type="navigateTo" url='../invite_index/invite_index'>invite_index</navigator>
 <!-- <map class='bjmap' bindmarkertap="markertap"></map> -->
 <!-- <map longitude="广州经度" latitude="广州纬度"></map> -->

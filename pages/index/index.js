@@ -3,9 +3,14 @@ Page({
     logs: []
   },
   clickMe() {
-    this.setData({
-      msg: 'Hello World'
+    wx.getUserInfo({
+      success(res) {
+        wx.navigateTo({
+          url: '../one/one',
+        })
+      }
     })
+    
     // wx.scanCode({
     //   success: (res) => {
     //     console.log(res)
@@ -18,14 +23,15 @@ Page({
   },
   onLoad() {
     // 获取用户经纬度
-    wx.getLocation({
-      type: 'wgs84',
-      success: (res) => {
-        const latitude = res.latitude // 纬度
-        const longitude = res.longitude // 经度
-        console.log(latitude)
-      }
-    })
+    // wx.getLocation({
+    //   type: 'wgs84',
+    //   success: (res) => {
+    //     const latitude = res.latitude // 纬度
+    //     const longitude = res.longitude // 经度
+    //     console.log(latitude)
+    //   }
+    // })
+
   },
   // 转发
   onShareAppMessage(res) {
