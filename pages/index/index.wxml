@@ -9,7 +9,7 @@
 <text>有一天你真的穷困潦倒了，再找朋友借钱？</text>
 <text>朋友？呵呵哒，他根本没拿你当朋友</text>
 <text>何不此刻就检验一下他！</text>
-<button open-type="getUserInfo" bindtap="clickMe">即可检验，now，起飞</button>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">即可检验，now，起飞</button>
 
 
 

@@ -1,5 +1,10 @@
+<image src="{{userInfo.avatarUrl}}"></image>
+<view>{{userInfo.nickName}}你好</view>
+<view>{{userInfo.city}}你好</view>
+<text>你的心愿--起一个高大上的名字更容易拿到￥哦</text>
+<input value="{{urldata.wish}}" bindinput='inputedit' placeholder="input" ></input>
 <text>你想要借多少钱</text>
-<input value="{{urldata.money}}" bindinput='inputedit' type='number' placeholder="这是一个可以自动聚焦的input" ></input>
+<input value="{{urldata.money}}" bindinput='inputedit2' type='number' placeholder="这是一个可以自动聚焦的input" ></input>
 {{urldata.money}}
 <text>需要利息吗</text>
 <checkbox-group bindchange="checkboxChange">

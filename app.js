@@ -1,5 +1,9 @@
 // 小程序启动之后，在 app.js 定义的 App 实例的 onLaunch 回调会被执行:小程序启动之后 触发
 App({
+  data: {
+    masterShareGlobe: {},
+    passiveGlobe: {}
+  },
   onLaunch(option) {
     // 小程序启动之后 触发
     // console.log(option) 
@@ -18,7 +22,7 @@ App({
     //     console.log('跳转失败')
     //   }
     // })
-    
+
     console.log('主页面')
   }
 })

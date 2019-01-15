@@ -1,37 +1,35 @@
 Page({
   data: { // 参与页面渲染的数据
-    logs: []
   },
-  clickMe() {
-    wx.getUserInfo({
-      success(res) {
-        wx.navigateTo({
-          url: '../one/one',
-        })
-      }
-    })
-    
-    // wx.scanCode({
-    //   success: (res) => {
-    //     console.log(res)
-    //   }
-    // })
-    // console.log(msg)
-  },
-  markertap(e) {
-    console.log(e)
+  bindGetUserInfo(e) {
+    if (e.detail.userInfo) {
+      //用户按了允许授权按钮
+      wx.setStorageSync('userInfo', e.detail.userInfo)
+      wx.navigateTo({
+        url: '../one/one',
+      })
+    }
   },
   onLoad() {
-    // 获取用户经纬度
-    // wx.getLocation({
-    //   type: 'wgs84',
-    //   success: (res) => {
-    //     const latitude = res.latitude // 纬度
-    //     const longitude = res.longitude // 经度
-    //     console.log(latitude)
-    //   }
-    // })
-
+    // 获取用户是否授权昵称等
+    wx.getSetting({
+      success: res => {
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success: res => {
+              //用户已经授权过
+              wx.setStorageSync('userInfo', res.userInfo)
+            }
+          })
+        }
+      }
+    })
+    // 如果分享人和打开该页面的人  wxid相同
+    if(1===1){
+      wx.redirectTo({
+        url: '../invite_index/invite_index',
+      })
+    }
   },
   // 转发
   onShareAppMessage(res) {

@@ -1,20 +1,37 @@
-<text>我是他的真朋友，别人都不行</text>
-<text>我来祝他一臂之力</text>
-<text>这么多年的真朋友该现身了</text>
-<view>你的好友需要众筹
-  <text>{{getshareurldata.money}}元
-</text></view>
-我要给他多少钱
-<input placeholder='我是他的真朋友，给他钱，还他心愿'></input>
-<button>支付</button>
 <view>
-   谁谁谁支持他20元
-</view><view>
-   谁谁谁支持他30元
-</view><view>
-   谁谁谁支持他2000元
-</view><view>
-   谁谁谁支持他10元
-</view><view>
-   谁谁谁支持他1000元
+  <image hidden='{{payBox}}' src='./imgs/pay_ma.jpg' mode='aspectFit'></image>
+</view>
+
+<text>{{getshareurldata.nickName}}</text>
+<image src="{{getshareurldata.avatarUrl}}"></image>
+
+<!-- 不是自己 start -->
+<view>
+  <text>我是他的真朋友，别人都不行</text>
+  <text>我来祝他一臂之力</text>
+  <text>这么多年的真朋友该现身了</text>
+  <view>你的好友需要众筹
+    <text>他的心愿是{{getshareurldata.wish}}</text>
+    <text>需要{{getshareurldata.money}}元</text>
+  </view>
+  我要给他多少钱
+  <input placeholder='我是他的真朋友，给他钱，还他心愿'></input>
+  <button bindtap='pay' open-type="getUserInfo">支付</button>
+</view>
+<!-- 不是自己 end -->
+<button open-type="share">真朋友不够多，我要继续转发</button>
+<view>
+  谁谁谁支持他20元
+</view>
+<view>
+  谁谁谁支持他30元
+</view>
+<view>
+  谁谁谁支持他2000元
+</view>
+<view>
+  谁谁谁支持他10元
+</view>
+<view>
+  谁谁谁支持他1000元
 </view>
